@@ -1,9 +1,9 @@
 {
   "name": "electron-installer-linux",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Aggregate electron-installer-debian, -redhat and -flatpak under a single package.",
   "main": "index.js",
-  "repository": "github.com/ibujs/electron-installer-linux",
+  "repository": "https://github.com/ibujs/electron-installer-linux.git",
   "author": "Ibrahim Ansari",
   "license": "Apache-2.0",
   "optionalDependencies": {

@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Compiled code.
+/index.js
+/index.esm.js
+/index.js.map
+/index.esm.js.map

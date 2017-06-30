@@ -1,5 +1,5 @@
 const BabiliPlugin = require("babili-webpack-plugin");
-const webpack = require("webpack");
+const { DefinePlugin } = require("webpack");
 
 function generateExternals(externals) {
   const externalsObject = {};
@@ -28,7 +28,7 @@ module.exports = {
   externals: generateExternals(["electron-installer-flatpak", "electron-installer-redhat", "electron-installer-debian"]),
   plugins: [
     new BabiliPlugin(),
-    new webpack.DefinePlugin({
+    new DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production"),
     }),
   ],

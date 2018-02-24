@@ -2,38 +2,33 @@
   "name": "electron-installer-linux",
   "version": "2.0.0-alpha.2",
   "description": "Aggregate electron-installer-debian, -redhat and -flatpak under a single package.",
-  "main": "index.js",
-  "module": "index.esm.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/ibujs/electron-installer-linux.git",
   "author": "Ibrahim Ansari",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "webpack && rollup -c rollup.config.js",
+    "build": "babel src/* -d lib/",
     "lint": "eslint ."
   },
-  "optionalDependencies": {
-    "electron-installer-debian": "^0.5.2",
-    "electron-installer-flatpak": "^0.6.0",
-    "electron-installer-redhat": "^0.5.0"
+  "dependencies": {
+    "electron-installer-debian": "^0.8.1",
+    "electron-installer-flatpak": "^0.8.0",
+    "electron-installer-redhat": "^0.5.0",
+    "electron-installer-snap": "^2.0.1"
   },
   "devDependencies": {
     "@types/jest": "^20.0.2",
-    "@types/rollup": "^0.41.1",
-    "@types/webpack": "^3.0.1",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.5.2",
-    "babili-webpack-plugin": "^0.1.2",
+    "babel-preset-minify": "^0.2.0",
     "eslint": "^4.1.1",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.6.1",
-    "eslint-plugin-react": "^7.1.0",
-    "jest": "^20.0.4",
-    "rollup": "^0.43.0",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "webpack": "^3.0.0"
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4"
   }
 }

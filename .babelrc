@@ -1,6 +1,4 @@
 {
-  "presets": [["env", {
-    "modules": false
-  }]],
+  "presets": ["env", "minify"],
   "plugins": ["external-helpers"]
 }

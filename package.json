@@ -1,6 +1,6 @@
 {
   "name": "electron-installer-linux",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0",
   "description": "Aggregate electron-installer-debian, -snap, -redhat and -flatpak under a single package.",
   "main": "lib/index.js",
   "repository": "https://github.com/ibujs/electron-installer-linux.git",

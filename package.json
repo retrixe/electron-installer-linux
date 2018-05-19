@@ -10,6 +10,9 @@
     "build": "babel src/* -d lib/",
     "lint": "eslint ."
   },
+  "engines": {
+    "node": ">=6.5.0"
+  },
   "dependencies": {
     "electron-installer-debian": "^0.8.1",
     "electron-installer-flatpak": "^0.8.0",

@@ -1,4 +1,3 @@
 {
-  "presets": ["env", "minify"],
-  "plugins": ["external-helpers"]
+  "presets": ["@babel/env", "minify"]
 }

@@ -1,7 +1,7 @@
 {
   "name": "electron-installer-linux",
   "version": "2.0.0-alpha.3",
-  "description": "Aggregate electron-installer-debian, -redhat and -flatpak under a single package.",
+  "description": "Aggregate electron-installer-debian, -snap, -redhat and -flatpak under a single package.",
   "main": "lib/index.js",
   "repository": "https://github.com/ibujs/electron-installer-linux.git",
   "author": "Ibrahim Ansari",
@@ -17,18 +17,16 @@
     "electron-installer-snap": "^2.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^20.0.2",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.5.2",
-    "babel-preset-minify": "^0.2.0",
-    "eslint": "^4.1.1",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "jest": "^20.0.4"
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-minify": "^0.5.0-alpha.01eac1c3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
   }
 }
